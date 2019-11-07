@@ -13,10 +13,12 @@ $(document).ready(function () {
         if ($(this).hasClass("green")) {
             $(this).css('background', 'green');
             greenCounter += 1;
+            $(this).off();
         }
         else if ($(this).hasClass("red")) {
             $(this).css('background', 'red');
             redCounter += 1;
+            $(this).off();
         }
         // Collego il contatore al testo html
         $('.js-red-counter').text(redCounter);

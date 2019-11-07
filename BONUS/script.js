@@ -38,12 +38,14 @@ $(document).ready(function () {
     // Imposto background al click
     $('div .square').click(function() {
         if ($(this).hasClass("green")) {
-            $(this).css('background', 'green');
+            $(this).css('background-color', 'green');
             greenCounter += 1;
+            $(this).off();
         }
         else if ($(this).hasClass("red")) {
-            $(this).css('background', 'red');
+            $(this).css('background-color', 'red');
             redCounter += 1;
+            $(this).off();
         }
         // Collego il contatore al testo html
         $('.js-red-counter').text(redCounter);
