@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #container {
+    margin: auto;
+    width: 804px;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .square {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border: solid 1px black;
+    display: flex;
+  }
+
+  .text {
+      display: flex;
+      justify-content: space-around;
+      font-size: 20px;
+      margin: 20px 0;
+  }
